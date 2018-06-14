@@ -70,9 +70,13 @@ class FabricClientProxy {
 						if (forPeers) {
 							if (org[prop]['tls_cacerts'] != undefined) {
 								let data = fs.readFileSync(org[prop]['tls_cacerts']);
+								let clientKey = fs.readFileSync(configuration.getOrg(org)['tls']['key']);
+								let clientCert = fs.readFileSync(configuration.getOrg(org)['tls']['key']);
 								targets.push(client.newPeer(peerUrl, {
 									pem: Buffer.from(data).toString(),
-									'ssl-target-name-override': org[prop]['server-hostname']
+									'ssl-target-name-override': org[prop]['server-hostname'],
+									'clientKey': Buffer.from(clientKey).toString(),
+          							'clientCert': Buffer.from(clientCert).toString(),
 								}));
 							} else {
 								targets.push(client.newPeer(peerUrl));
@@ -81,9 +85,13 @@ class FabricClientProxy {
 							let eh = client.newEventHub();
 							if (org[prop]['tls_cacerts'] != undefined) {
 								let data = fs.readFileSync(org[prop]['tls_cacerts']);
+								let clientKey = fs.readFileSync(configuration.getOrg(org)['tls']['key']);
+								let clientCert = fs.readFileSync(configuration.getOrg(org)['tls']['key']);
 								eh.setPeerAddr(org[prop]['events'], {
 									pem: Buffer.from(data).toString(),
-									'ssl-target-name-override': org[prop]['server-hostname']
+									'ssl-target-name-override': org[prop]['server-hostname'],
+									'clientKey': Buffer.from(clientKey).toString(),
+          							'clientCert': Buffer.from(clientCert).toString(),
 								});
 							} else {
 								eh.setPeerAddr(org[prop]['events']);
