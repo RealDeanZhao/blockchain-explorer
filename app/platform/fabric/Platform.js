@@ -133,17 +133,16 @@ class Platform {
           if (keyConfig != undefined && certConfig != undefined){
             let clientKey = fs.readFileSync(keyConfig);
             let clientCert = fs.readFileSync(certConfig);
-          }
-         
-          if (clientKey != undefined && clientCert != undefined){
-            peer = client.newPeer(configuration.getOrg(org)[key].requests, {
-              pem: Buffer.from(data).toString(),
-              "ssl-target-name-override": configuration.getOrg(org)[key][
-                "server-hostname"
-              ],
-              'clientKey': Buffer.from(clientKey).toString(),
-              'clientCert': Buffer.from(clientCert).toString(),
-            });
+            if (clientKey != undefined && clientCert != undefined){
+              peer = client.newPeer(configuration.getOrg(org)[key].requests, {
+                pem: Buffer.from(data).toString(),
+                "ssl-target-name-override": configuration.getOrg(org)[key][
+                  "server-hostname"
+                ],
+                'clientKey': Buffer.from(clientKey).toString(),
+                'clientCert': Buffer.from(clientCert).toString(),
+              });
+            }
           }
         }
        
