@@ -30,6 +30,8 @@ import {
   getNotification
 } from '../../store/selectors/selectors'
 
+var appconfig = require("../../appconfig.json");
+
 const styles = theme => ({
   margin: {
     margin: theme.spacing.unit,
@@ -128,9 +130,10 @@ export class HeaderView extends Component {
 
   render() {
     const { classes } = this.props;
+    const wsUrl = "ws://"+appconfig.host+":"+appconfig.port
     return (
       <div>
-        <Websocket url="ws://localhost:8080/"
+        <Websocket url={wsUrl}
           onMessage={this.handleData.bind(this)} reconnect={true} />
         <Navbar color="light" light expand="md" fixed="top">
           <NavbarBrand href="/"> <img src={Logo} className="logo" alt="Hyperledger Logo" /></NavbarBrand>
