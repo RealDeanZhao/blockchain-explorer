@@ -76,7 +76,7 @@ class Platform {
         },
         skipPersistence: false
       });
-
+      
       client.setAdminSigningIdentity(
         keyPEM,
         certPEM,
@@ -144,14 +144,14 @@ class Platform {
               });
             }
           }
+        } else {
+          peer = client.newPeer(configuration.getOrg(org)[key].requests, {
+            pem: Buffer.from(data).toString(),
+            "ssl-target-name-override": configuration.getOrg(org)[key][
+              "server-hostname"
+            ]
+          });
         }
-       
-        peer = client.newPeer(configuration.getOrg(org)[key].requests, {
-          pem: Buffer.from(data).toString(),
-          "ssl-target-name-override": configuration.getOrg(org)[key][
-            "server-hostname"
-          ]
-        });
       } else {
         peer = client.newPeer(configuration.getOrg(org)[key].requests);
       }
