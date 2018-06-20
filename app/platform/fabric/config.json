@@ -1,59 +1,121 @@
-	{
+{
 	"network-config": {
 		"org1": {
-			"name": "peerOrg1",
-			"mspid": "Org1MSP",
+			"name": "xiaoyudian",
+			"mspid": "xiaoyudianMSP",
 			"peer1": {
-				"requests": "grpcs://127.0.0.1:7051",
-				"events": "grpcs://127.0.0.1:7053",
-				"server-hostname": "peer0.org1.example.com",
-				"tls_cacerts": "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+				"requests": "grpcs://localhost:7051",
+				"events": "grpcs://localhost:7053",
+				"server-hostname": "peer1-xiaoyudian",
+				"tls_cacerts": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/xiaoyudian-ca-chain.pem"
 			},
 			"peer2": {
-				"requests": "grpcs://127.0.0.1:8051",
-				"events": "grpcs://127.0.0.1:8053",
-				"server-hostname": "peer1.org1.example.com",
-				"tls_cacerts": "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/ca.crt"
+				"requests": "grpcs://localhost:8051",
+				"events": "grpcs://localhost:8053",
+				"server-hostname": "peer2-xiaoyudian",
+				"tls_cacerts": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/xiaoyudian-ca-chain.pem"
 			},
 			"admin": {
-				"key": "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore",
-				"cert": "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts"
+				"key": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/orgs/xiaoyudian/users/admin-xiaoyudian/msp/keystore",
+				"cert": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/orgs/xiaoyudian/users/admin-xiaoyudian/msp/signcerts"
+			},
+			"tls": {
+				"key": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/tls/peer1-xiaoyudian-go-client.key",
+				"cert": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/tls/peer1-xiaoyudian-go-client.crt"
 			}
 		},
 		"org2": {
-			"name": "peerOrg2",
-			"mspid": "Org2MSP",
+			"name": "jinzun",
+			"mspid": "jinzunMSP",
 			"peer1": {
-				"requests": "grpcs://127.0.0.1:9051",
-				"events": "grpcs://127.0.0.1:9053",
-				"server-hostname": "peer0.org2.example.com",
-				"tls_cacerts": "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt"
+				"requests": "grpcs://localhost:7151",
+				"events": "grpcs://localhost:7153",
+				"server-hostname": "peer1-jinzun",
+				"tls_cacerts": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/jinzun-ca-chain.pem"
 			},
 			"peer2": {
-				"requests": "grpcs://127.0.0.1:10051",
-				"events": "grpcs://127.0.0.1:10053",
-				"server-hostname": "peer1.org2.example.com",
-				"tls_cacerts": "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/ca.crt"
+				"requests": "grpcs://localhost:8151",
+				"events": "grpcs://localhost:8153",
+				"server-hostname": "peer2-jinzun",
+				"tls_cacerts": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/jinzun-ca-chain.pem"
 			},
 			"admin": {
-				"key": "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore",
-				"cert": "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts"
+				"key": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/orgs/jinzun/users/admin-jinzun/msp/keystore",
+				"cert": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/orgs/jinzun/users/admin-jinzun/msp/signcerts"
+			},
+			"tls": {
+				"key": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/tls/peer1-jinzun-go-client.key",
+				"cert": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/tls/peer1-jinzun-go-client.crt"
+			}
+		},
+		"org3": {
+			"name": "sute",
+			"mspid": "suteMSP",
+			"peer1": {
+				"requests": "grpcs://localhost:7251",
+				"events": "grpcs://localhost:7253",
+				"server-hostname": "peer1-sute",
+				"tls_cacerts": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/sute-ca-chain.pem"
+			},
+			"peer2": {
+				"requests": "grpcs://localhost:8251",
+				"events": "grpcs://localhost:8253",
+				"server-hostname": "peer2-sute",
+				"tls_cacerts": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/sute-ca-chain.pem"
+			},
+			"admin": {
+				"key": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/orgs/sute/users/admin-sute/msp/keystore",
+				"cert": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/orgs/sute/users/admin-sute/msp/signcerts"
+			},
+			"tls": {
+				"key": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/tls/peer1-sute-go-client.key",
+				"cert": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/tls/peer1-sute-go-client.crt"
+			}
+		},
+		"org4": {
+			"name": "beidouxing",
+			"mspid": "beidouxingMSP",
+			"peer1": {
+				"requests": "grpcs://localhost:7351",
+				"events": "grpcs://localhost:7353",
+				"server-hostname": "peer1-beidouxing",
+				"tls_cacerts": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/beidouxing-ca-chain.pem"
+			},
+			"peer2": {
+				"requests": "grpcs://localhost:8351",
+				"events": "grpcs://localhost:8353",
+				"server-hostname": "peer2-beidouxing",
+				"tls_cacerts": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/beidouxing-ca-chain.pem"
+			},
+			"admin": {
+				"key": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/orgs/beidouxing/users/admin-beidouxing/msp/keystore",
+				"cert": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/orgs/beidouxing/users/admin-beidouxing/msp/signcerts"
+			},
+			"tls": {
+				"key": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/tls/peer1-beidouxing-go-client.key",
+				"cert": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/tls/peer1-beidouxing-go-client.crt"
 			}
 		}
 	},
-	"channel": "mychannel",
-	"orderers":[
-				{
-				"mspid": "OrdererMSP",
-				"server-hostname":"orderer.example.com",
-				"requests":"grpcs://127.0.0.1:7050",
-				"tls_cacerts":"fabric-path/fabric-samples/first-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt"
-				}
-				],
-	"keyValueStore": "/tmp/fabric-client-kvs",
-	"configtxgenToolPath": "fabric-path/fabric-samples/bin",
+	"orderers": [
+		{
+			"mspid": "themisMSP",
+			"server-hostname": "orderer1-themis",
+			"requests": "grpcs://localhost:7050",
+			"tls_cacerts": "/Users/dean/.gvm/pkgsets/go1.10.2/global/src/themis.xyd.cn/themis/bootstrap/data/themis-ca-chain.pem"
+		}
+	],
+	"host": "localhost",
+	"port": "8089",
+	"channel": "xiaoyudian-jinzun-channel",
+	"GOPATH": "/opt/gopath",
+	"keyValueStore": "/tmp/xiaoyudian/state-store",
 	"eventWaitTime": "30000",
-	"license": "Apache-2.0",
-	"version": "1.1"
+	"pg": {
+		"host": "themis-explorer-pg",
+		"port": "5432",
+		"database": "fabricexplorer",
+		"username": "hppoc",
+		"passwd": "password"
 	}
-
+}

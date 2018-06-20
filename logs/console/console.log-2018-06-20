@@ -1,0 +1,98 @@
+locate: illegal option -- r
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+locate: illegal option -- r
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+locate: illegal option -- r
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+postgres://hppoc:password@127.0.0.1:5432/fabricexplorer
+
+
+Please open web browser to access ：http://localhost:8089/
+
+
+pid is 79615
+
+
+(node:79615) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+    at Platform.setupOrderers (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:232:37)
+    at channelInfo.channels.forEach.chan (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:221:12)
+    at Array.forEach (<anonymous>)
+    at Platform.setChannels (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:217:26)
+    at <anonymous>
+(node:79615) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:79615) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:79615) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+    at Platform.setupOrderers (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:232:37)
+    at channelInfo.channels.forEach.chan (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:221:12)
+    at Array.forEach (<anonymous>)
+    at Platform.setChannels (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:217:26)
+    at <anonymous>
+(node:79615) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+(node:79615) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+    at Platform.setupOrderers (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:232:37)
+    at channelInfo.channels.forEach.chan (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:221:12)
+    at Array.forEach (<anonymous>)
+    at Platform.setChannels (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:217:26)
+    at <anonymous>
+(node:79615) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+Successfully received the block event[object Object]
+Successfully received the block event[object Object]
+Successfully received the block event[object Object]
+Received kill signal, shutting down gracefully
+Closed out remaining connections
+locate: illegal option -- r
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+locate: illegal option -- r
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+locate: illegal option -- r
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+postgres://hppoc:password@127.0.0.1:5432/fabricexplorer
+
+
+Please open web browser to access ：http://localhost:8089/
+
+
+pid is 79792
+
+
+(node:79792) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+    at Platform.setupOrderers (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:232:37)
+    at channelInfo.channels.forEach.chan (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:221:12)
+    at Array.forEach (<anonymous>)
+    at Platform.setChannels (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:217:26)
+    at <anonymous>
+(node:79792) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:79792) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:79792) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+    at Platform.setupOrderers (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:232:37)
+    at channelInfo.channels.forEach.chan (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:221:12)
+    at Array.forEach (<anonymous>)
+    at Platform.setChannels (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:217:26)
+    at <anonymous>
+(node:79792) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+(node:79792) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'forEach' of undefined
+    at Platform.setupOrderers (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:232:37)
+    at channelInfo.channels.forEach.chan (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:221:12)
+    at Array.forEach (<anonymous>)
+    at Platform.setChannels (/Users/dean/CodeRepos/blockchain-explorer/app/platform/fabric/Platform.js:217:26)
+    at <anonymous>
+(node:79792) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+Successfully received the block event[object Object]
+Successfully received the block event[object Object]
+Successfully received the block event[object Object]
+Received kill signal, shutting down gracefully
+Received kill signal, shutting down gracefully
+Received kill signal, shutting down gracefully
+Closed out remaining connections

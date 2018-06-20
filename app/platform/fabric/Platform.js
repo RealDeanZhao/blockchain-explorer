@@ -158,18 +158,47 @@ class Platform {
         let data = fs.readFileSync(
           configuration.getOrg(org)[key]["tls_cacerts"]
         );
-        peer = client.newPeer(configuration.getOrg(org)[key].requests, {
-          pem: Buffer.from(data).toString(),
-          "ssl-target-name-override": configuration.getOrg(org)[key][
-            "server-hostname"
-          ]
-        });
-        this.addStatusPeer(org, key,configuration.getOrg(org)[key].requests, {
-          pem: Buffer.from(data).toString(),
-          "ssl-target-name-override": configuration.getOrg(org)[key][
-            "server-hostname"
-          ]
-        });
+        
+        let tlsConfig = configuration.getOrg(org)['tls'];
+        if (tlsConfig != null) {
+            let keyConfig = tlsConfig['key'];
+            let certConfig = tlsConfig['cert'];
+            if (keyConfig != undefined && certConfig != undefined) {
+                let clientKey = fs.readFileSync(keyConfig);
+                let clientCert = fs.readFileSync(certConfig);
+                if (clientKey != undefined && clientCert != undefined) {
+                    peer = client.newPeer(configuration.getOrg(org)[key].requests, {
+                        pem: Buffer.from(data).toString(),
+                        "ssl-target-name-override": configuration.getOrg(org)[key][
+                            "server-hostname"
+                        ],
+                        'clientKey': Buffer.from(clientKey).toString(),
+                        'clientCert': Buffer.from(clientCert).toString(),
+                    });
+                    this.addStatusPeer(org, key, configuration.getOrg(org)[key].requests, {
+                        pem: Buffer.from(data).toString(),
+                        "ssl-target-name-override": configuration.getOrg(org)[key][
+                            "server-hostname"
+                        ],
+                        'clientKey': Buffer.from(clientKey).toString(),
+                        'clientCert': Buffer.from(clientCert).toString(),
+                    });
+                }
+            }
+        } else {
+          peer = client.newPeer(configuration.getOrg(org)[key].requests, {
+            pem: Buffer.from(data).toString(),
+            "ssl-target-name-override": configuration.getOrg(org)[key][
+              "server-hostname"
+            ]
+          });
+          this.addStatusPeer(org, key,configuration.getOrg(org)[key].requests, {
+            pem: Buffer.from(data).toString(),
+            "ssl-target-name-override": configuration.getOrg(org)[key][
+              "server-hostname"
+            ]
+          });
+        }
       } else {
         peer = client.newPeer(configuration.getOrg(org)[key].requests);
         this.addStatusPeer(org, key,configuration.getOrg(org)[key].requests);

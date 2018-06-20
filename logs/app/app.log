@@ -1,0 +1,89 @@
+[2018-06-20 10:35:59.009] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:35:59.009] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:36:38.840] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:36:38.840] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:37:29.316] [DEBUG] FabricConfiguration - Msp ID : xiaoyudianMSP
+[2018-06-20 10:37:29.330] [DEBUG] FabricConfiguration - Msp ID : xiaoyudianMSP
+[2018-06-20 10:37:29.336] [DEBUG] FabricConfiguration - Msp ID : jinzunMSP
+[2018-06-20 10:37:29.341] [DEBUG] FabricConfiguration - Msp ID : jinzunMSP
+[2018-06-20 10:37:29.346] [DEBUG] FabricConfiguration - Msp ID : suteMSP
+[2018-06-20 10:37:29.351] [DEBUG] FabricConfiguration - Msp ID : suteMSP
+[2018-06-20 10:37:29.354] [DEBUG] FabricConfiguration - Msp ID : beidouxingMSP
+[2018-06-20 10:37:29.358] [DEBUG] FabricConfiguration - Msp ID : beidouxingMSP
+[2018-06-20 10:37:29.446] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:37:29.446] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:37:29.451] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.451] [DEBUG] Query - ByteBuffer {
+  buffer: <Buffer 08 03 12 20 1c c3 9e 4a 92 c5 a5 93 af 58 1a 71 9f 01 ec cc 45 0d 4b 50 6e 45 01 38 f0 b7 c0 19 7f e5 ef 03 1a 20 2e 29 d0 a7 ab 12 54 de d1 5e b4 aa ... >,
+  offset: 4,
+  markedOffset: -1,
+  limit: 36,
+  littleEndian: true,
+  noAssert: false }
+[2018-06-20 10:37:29.452] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.452] [DEBUG] Query - <<<<<<<<<< channel height >>>>>>>>>
+[2018-06-20 10:37:29.452] [DEBUG] Query - response.height.low  3
+[2018-06-20 10:37:29.466] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.467] [DEBUG] Query - ByteBuffer {
+  buffer: <Buffer 08 03 12 20 1c c3 9e 4a 92 c5 a5 93 af 58 1a 71 9f 01 ec cc 45 0d 4b 50 6e 45 01 38 f0 b7 c0 19 7f e5 ef 03 1a 20 2e 29 d0 a7 ab 12 54 de d1 5e b4 aa ... >,
+  offset: 4,
+  markedOffset: -1,
+  limit: 36,
+  littleEndian: true,
+  noAssert: false }
+[2018-06-20 10:37:29.467] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.467] [DEBUG] Query - <<<<<<<<<< channel height >>>>>>>>>
+[2018-06-20 10:37:29.467] [DEBUG] Query - response.height.low  3
+[2018-06-20 10:37:29.508] [DEBUG] Query - <<< Instantiated Chaincodes >>>
+[2018-06-20 10:37:29.510] [DEBUG] Query - <<< Instantiated Chaincodes >>>
+[2018-06-20 10:37:29.517] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.517] [DEBUG] Query - ByteBuffer {
+  buffer: <Buffer 08 03 12 20 92 19 49 00 07 d1 3b 7b eb 2c f4 e2 b7 48 4d 87 16 7b c4 a8 0f 0c 39 02 59 fe 68 bd e2 3f 12 f5 1a 20 f3 e9 c0 31 69 a3 92 07 9d 4a c8 8e ... >,
+  offset: 4,
+  markedOffset: -1,
+  limit: 36,
+  littleEndian: true,
+  noAssert: false }
+[2018-06-20 10:37:29.517] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.517] [DEBUG] Query - <<<<<<<<<< channel height >>>>>>>>>
+[2018-06-20 10:37:29.517] [DEBUG] Query - response.height.low  3
+[2018-06-20 10:37:29.554] [DEBUG] Query - <<< Instantiated Chaincodes >>>
+[2018-06-20 10:37:29.595] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.595] [DEBUG] Query - ByteBuffer {
+  buffer: <Buffer 08 03 12 20 3d a5 71 c5 5b df 21 5a e0 3a c2 f5 a3 1b 84 a6 a3 2a a6 99 4f d7 08 9e 88 85 e6 96 45 bd 19 08 1a 20 b4 96 52 49 1f 48 24 e0 63 29 17 32 ... >,
+  offset: 4,
+  markedOffset: -1,
+  limit: 36,
+  littleEndian: true,
+  noAssert: false }
+[2018-06-20 10:37:29.595] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.595] [DEBUG] Query - <<<<<<<<<< channel height >>>>>>>>>
+[2018-06-20 10:37:29.595] [DEBUG] Query - response.height.low  3
+[2018-06-20 10:37:29.640] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.640] [DEBUG] Query - ByteBuffer {
+  buffer: <Buffer 08 03 12 20 92 19 49 00 07 d1 3b 7b eb 2c f4 e2 b7 48 4d 87 16 7b c4 a8 0f 0c 39 02 59 fe 68 bd e2 3f 12 f5 1a 20 f3 e9 c0 31 69 a3 92 07 9d 4a c8 8e ... >,
+  offset: 4,
+  markedOffset: -1,
+  limit: 36,
+  littleEndian: true,
+  noAssert: false }
+[2018-06-20 10:37:29.640] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.640] [DEBUG] Query - <<<<<<<<<< channel height >>>>>>>>>
+[2018-06-20 10:37:29.640] [DEBUG] Query - response.height.low  3
+[2018-06-20 10:37:29.872] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.872] [DEBUG] Query - ByteBuffer {
+  buffer: <Buffer 08 03 12 20 3d a5 71 c5 5b df 21 5a e0 3a c2 f5 a3 1b 84 a6 a3 2a a6 99 4f d7 08 9e 88 85 e6 96 45 bd 19 08 1a 20 b4 96 52 49 1f 48 24 e0 63 29 17 32 ... >,
+  offset: 4,
+  markedOffset: -1,
+  limit: 36,
+  littleEndian: true,
+  noAssert: false }
+[2018-06-20 10:37:29.872] [DEBUG] Query - ===========================================
+[2018-06-20 10:37:29.872] [DEBUG] Query - <<<<<<<<<< channel height >>>>>>>>>
+[2018-06-20 10:37:29.872] [DEBUG] Query - response.height.low  3
+[2018-06-20 10:39:07.795] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:39:07.795] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:42:29.675] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:42:29.675] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:45:02.277] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2018-06-20 10:45:02.277] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
